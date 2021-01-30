@@ -1,16 +1,20 @@
 export class ContaCorrente {
     agencia;
-    _saldo;
+    cliente;
 
-    sacar(valor){
-        if(this._saldo >= valor){
+    
+    _saldo = 0;
+
+    sacar(valor) {
+        if (this._saldo >= valor) {
             this._saldo -= valor;
             return valor;
         }
+
     }
 
-    depositar(valor){
-        if(valor > 0){
+    depositar(valor) {
+        if(valor <= 0) {
             return;
         }
         this._saldo += valor;
