@@ -1,5 +1,3 @@
-
-
 const cliente1 = new Cliente();
 
 cliente1.nome = "Ricardo";
