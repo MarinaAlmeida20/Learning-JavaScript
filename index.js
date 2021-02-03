@@ -4,6 +4,7 @@ import{ContaCorrente} from "./ContaCorrente.js"
 const cliente1 = new Cliente("Ricardo", 11122233309);
 
 const cliente2 = new Cliente("Alice", 88822233309);
+console.log(cliente2.cpf);
 
 const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.agencia = 1001;
