@@ -1,9 +1,13 @@
+import { Cliente } from "./Cliente.js";
+
 export class ContaCorrente {
     agencia;
     _cliente;
 
     set cliente(novoValor){
-        this._cliente = novoValor;
+        if (novoValor instanceof Cliente){
+            this._cliente = novoValor;
+        }
     }
 
     
